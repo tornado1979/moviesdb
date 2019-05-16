@@ -1,0 +1,29 @@
+// search component
+.searchbox {
+  flex: 1 100%;
+  margin-top: 50px;
+
+  & input[type=text] {
+    width: 100%;
+    height: 46px;
+    border: none !important;
+    outline: none;
+    font-style: italic;
+    font-weight: light;
+    font-size: 100%;
+    line-height: 1.2em;
+    color: #acacac;
+    box-sizing: border-box;
+    text-indent: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  & .fa-search {
+    position: relative;
+    top: -31px;
+    left: 6px;
+    display: inline-flex;
+    color: #cacaca;
+    z-index: 6;
+  }
+}

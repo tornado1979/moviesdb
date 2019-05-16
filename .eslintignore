@@ -1,0 +1,10 @@
+# ignore libraries of d3.js 
+
+src/modules/stats/charts/barChart.js
+src/modules/stats/charts/world.js
+
+src/modules/stats/lib/BarChart.js
+src/modules/stats/lib/BaseChart.js
+src/modules/stats/lib/BubbleChart.js
+src/modules/stats/lib/Chart.js
+src/modules/stats/lib/PieChart.js

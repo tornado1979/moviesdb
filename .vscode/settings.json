@@ -1,0 +1,4 @@
+{
+  "mocha.enabled": true,
+  "deepscan.enable": true
+}

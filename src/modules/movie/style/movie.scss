@@ -1,0 +1,119 @@
+
+/*
+.movie-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  background-image: url(https://image.tmdb.org/t/p/w1400_and_h450_face//9ywA15OAiwjSTvg3cBs9B7kOCBF.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  will-change: opacity;
+  filter: opacity(100) grayscale(100%) contrast(130%);
+} */
+.top-wrapper {
+  display: flex;
+  width: 100%;
+}
+.movie-wrapper * {
+  color: #fff;
+}
+
+.movie-wrapper:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(https://image.tmdb.org/t/p/w1400_and_h450_face/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg);
+}
+
+.custom-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: radial-gradient(circle at 20% 50%, rgba(30.59%, 34.12%, 36.08%, 0.98) 0%, rgba(7.45%, 10.20%, 13.33%, 0.88) 100%);
+}
+
+.movie-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  & .progress {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+  }
+
+  & .panel {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1 100%;
+    max-width: 1000px;
+    height: 410px;
+
+    & .body {
+      flex: 1 65%;
+      height: 100%;
+      max-width: 65%;
+    }
+
+    & .title {
+      margin: 0;
+      padding: 0;
+      font-size: 35px;
+      line-height: 1.1em;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    & .img {
+      flex: 1 22%;
+      & img {
+        max-width: 273px;
+      }
+    }
+
+    & .date {
+      opacity: 0.6;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+  }
+}
+
+.wrap-body {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.credits {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 100%;
+  justify-content: flex-start;
+  & h3 {
+    margin-bottom: 20px;
+  }
+
+  & div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
